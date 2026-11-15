@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Smart Greenhouse</title>
+<style>
+:root{color-scheme:light dark;--bg:#f6f8f7;--fg:#14201d;--muted:#55665f;--card:#fff;--line:#dbe4e0;--accent:#128a6f}
+@media (prefers-color-scheme:dark){:root{--bg:#080d0c;--fg:#eaf4f0;--muted:#8fa19b;--card:#101817;--line:#24312f;--accent:#41d9b4}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;font-size:14px}
+a{color:var(--accent)}h1{font-size:28px;line-height:1.2;margin:0 0 4px}h2{font-size:19px;margin:32px 0 8px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:16px 0}
+li{margin:6px 0}footer{margin-top:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+
+<h1>Smart Greenhouse – Support</h1>
+<p class="meta">Help for the Smart Greenhouse app for iPhone and iPad</p>
+<div class="card">
+<strong>Contact us</strong><br>
+Email <a href="mailto:samuel.tgagro@gmail.com">samuel.tgagro@gmail.com</a>. We normally reply within two business days. Please include your iOS version and the firmware version shown on the controller screen.
+</div>
+<h2>What the app does</h2>
+<p>Smart Greenhouse monitors and controls a Smart Greenhouse ESP32 touchscreen controller over your local Wi-Fi network: readings, the window, fan, irrigation pump, lighting and automatic mode. The app talks directly to the controller; it does not need an account or an internet connection.</p>
+<h2>Connecting to your controller</h2>
+<ol>
+<li>Connect the controller to Wi-Fi from its on-screen Wi-Fi settings.</li>
+<li>Join the same Wi-Fi network on your iPhone or iPad.</li>
+<li>In the app, open <strong>Settings → ESP32 Connection</strong>. Enter <code>greenhouse-touch.local</code>, or the IP address shown on the controller screen.</li>
+<li>Enter the 16-character pairing key from the controller's Wi-Fi screen and tap <strong>Save &amp; connect</strong>.</li>
+<li>When iOS asks for permission to find devices on your local network, tap <strong>Allow</strong>.</li>
+</ol>
+<h2>Trying the app without a controller</h2>
+<p>Open <strong>Settings</strong> and tap <strong>No controller yet? Try demo mode</strong>. The app then shows a simulated greenhouse, clearly labelled DEMO. To leave demo mode, enter your controller's host and pairing key and tap <strong>Save &amp; connect</strong>.</p>
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>The app says Offline.</strong> Check that the phone and the controller are on the same Wi-Fi network, and that Local Network access is enabled for Smart Greenhouse in iOS <em>Settings → Privacy &amp; Security → Local Network</em>.</li>
+<li><strong><code>greenhouse-touch.local</code> does not resolve.</strong> Enter the IP address shown on the controller screen instead.</li>
+<li><strong>The controller cannot join Wi-Fi.</strong> After 30 seconds it starts a recovery hotspot named <code>Greenhouse-…</code>. Join it using the pairing key as the password and set the app host to <code>192.168.4.1</code>.</li>
+<li><strong>Controls are greyed out.</strong> Controls are disabled while the controller is offline, while another command is pending, or when the controller reports a fault.</li>
+</ul>
+
+<footer>© 2026 TGAGROCULTURE Sp. z o.o. · <a href="mailto:samuel.tgagro@gmail.com">samuel.tgagro@gmail.com</a></footer>
+</main>
+</body>
+</html>
